@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auxiliary Pioneer Application</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+    select, input, button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    .hidden {
+      display: none;
+    }
+    button {
+      margin-top: 20px;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Auxiliary Pioneer Application</h2>
+
+<form id="pioneerForm">
+
+  <label>Service Period</label>
+  <select id="startOption" required>
+    <option value="">Select Option</option>
+    <option value="one-month">One Month Only</option>
+    <option value="indefinite">Indefinitely</option>
+    <option value="January">January</option>
+    <option value="February">February</option>
+    <option value="March">March</option>
+    <option value="April">April</option>
+    <option value="May">May</option>
+    <option value="June">June</option>
+    <option value="July">July</option>
+    <option value="August">August</option>
+    <option value="September">September</option>
+    <option value="October">October</option>
+    <option value="November">November</option>
+    <option value="December">December</option>
+  </select>
+
+  <div id="endMonthContainer" class="hidden">
+    <label>End Month</label>
+    <select id="endMonth">
+      <option value="">Select End Month</option>
+      <option value="January">January</option>
+      <option value="February">February</option>
+      <option value="March">March</option>
+      <option value="April">April</option>
+      <option value="May">May</option>
+      <option value="June">June</option>
+      <option value="July">July</option>
+      <option value="August">August</option>
+      <option value="September">September</option>
+      <option value="October">October</option>
+      <option value="November">November</option>
+      <option value="December">December</option>
+    </select>
+  </div>
+
+  <label>Date</label>
+  <input type="date" id="todayDate" readonly>
+
+  <label>Please Type Your Name</label>
+  <input type="text" id="name" required>
+
+  <p>
+    By typing my name above, I acknowledge that this is equivalent to my personal signature.
+  </p>
+
+  <p>
+    I am of good moral standing and habits. I have made plans that will enable me to meet the hour requirement.
+    See the June 2013 Our Kingdom Ministry, p. 2.
+  </p>
+
+  <input type="checkbox" id="agree" required>
+  <label for="agree">I have read and agree</label>
+
+  <button type="submit">Submit Application</button>
+
+</form>
+
+<script>
+  const startOption = document.getElementById("startOption");
+  const endContainer = document.getElementById("endMonthContainer");
+  const endMonth = document.getElementById("endMonth");
+
+  document.getElementById("todayDate").valueAsDate = new Date();
+
+  startOption.addEventListener("change", function() {
+    if (this.value === "one-month" || this.value === "indefinite" || this.value === "") {
+      endContainer.classList.add("hidden");
+      endMonth.required = false;
+    } else {
+      endContainer.classList.remove("hidden");
+      endMonth.required = true;
+    }
+  });
+
+  document.getElementById("pioneerForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Form submitted. Email integration coming next.");
+  });
+</script>
+
+</body>
+</html>

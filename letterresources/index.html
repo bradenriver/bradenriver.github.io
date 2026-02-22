@@ -11,6 +11,7 @@
   --text: #1c1c1c;
   --muted: #5f5f5f;
   --link: #0a4bb8;
+  --alert: #7a1f1f; /* refined dark red */
 }
 
 * {
@@ -85,6 +86,11 @@ a:hover {
 .notice {
   margin-bottom: 15px;
 }
+
+.alert {
+  color: var(--alert);
+  font-weight: 600;
+}
 </style>
 </head>
 
@@ -123,7 +129,9 @@ a:hover {
   <div class="section-title">Address and Name Research Tools</div>
   <div class="content">
     <div class="notice">
-      Please keep in mind that no public database is perfectly current. It is normal for names to differ between sources. If you encounter conflicting information, use good judgment and proceed in a reasonable manner.
+      <span class="alert">No public database is perfectly current.</span>
+      <span class="alert">It is normal for names to differ between sources.</span>
+      If you encounter conflicting information, use good judgment and proceed in a reasonable manner.
     </div>
 
     <ul>

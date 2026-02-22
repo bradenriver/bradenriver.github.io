@@ -3,50 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Letter Writing Tools & Resources</title>
-    <meta name="description" content="Letter writing tools, congregation arrangements, and research resources." />
+    <title>Letter Writing Tools and Resources</title>
+    <meta name="description" content="Letter writing tools and resources." />
     <style>
       :root {
-        --bg: #0b1220;
-        --card: #111a2e;
-        --text: #e7ecff;
-        --muted: #b9c3ff;
-        --link: #7cb7ff;
-        --border: rgba(255, 255, 255, 0.12);
+        --bg: #ffffff;
+        --text: #111111;
+        --muted: #444444;
+        --border: #e6e6e6;
+        --link: #0b57d0;
+        --card: #fafafa;
       }
       * { box-sizing: border-box; }
       body {
         margin: 0;
         font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-        background: radial-gradient(1200px 800px at 20% 0%, #142048 0%, var(--bg) 55%);
+        background: var(--bg);
         color: var(--text);
-        line-height: 1.45;
+        line-height: 1.5;
       }
       .wrap {
         max-width: 820px;
         margin: 0 auto;
         padding: 32px 18px 56px;
       }
-      header {
-        margin-bottom: 18px;
-      }
       h1 {
-        margin: 0 0 8px;
-        font-size: 28px;
+        margin: 0 0 22px;
+        text-align: center;
+        font-size: 30px;
         letter-spacing: 0.2px;
       }
-      p.subtitle {
-        margin: 0;
-        color: var(--muted);
-        font-size: 15px;
-      }
       .card {
-        background: rgba(17, 26, 46, 0.92);
+        background: var(--card);
         border: 1px solid var(--border);
-        border-radius: 14px;
+        border-radius: 12px;
         padding: 18px;
         margin-top: 16px;
-        backdrop-filter: blur(6px);
       }
       h2 {
         margin: 0 0 12px;
@@ -62,69 +54,45 @@
         text-decoration: none;
       }
       a:hover { text-decoration: underline; }
-      .notice {
-        margin: 14px 0 0;
-        padding: 12px 12px;
-        border-left: 4px solid var(--link);
-        background: rgba(124, 183, 255, 0.10);
-        border-radius: 10px;
-      }
-      .highlight {
-        margin-top: 16px;
-        padding: 14px;
-        border-radius: 12px;
-        background: rgba(124, 183, 255, 0.12);
+      .note {
+        margin-top: 12px;
+        padding: 12px;
         border: 1px solid var(--border);
-      }
-      footer {
-        margin-top: 18px;
+        background: #ffffff;
+        border-radius: 10px;
         color: var(--muted);
-        font-size: 12px;
       }
+      .note strong { color: var(--text); }
     </style>
   </head>
   <body>
     <div class="wrap">
-      <header>
-        <h1>Letter Writing Tools & Resources</h1>
-        <p class="subtitle">Congregation arrangements and helpful research links for letter writing.</p>
-      </header>
+      <h1>Letter Writing Tools and Resources</h1>
 
-      <!-- Congregation Arrangement Section -->
-      <section class="card">
-        <h2>Congregation Letter Writing Arrangement</h2>
-        <div class="highlight">
-          Letter writing territory arrangements take place
-          <strong>Monday and Friday at 9:30 a.m.</strong>
-        </div>
-      </section>
-
-      <!-- Instructions Section -->
       <section class="card">
         <h2>Instructions</h2>
         <ul>
           <li>
-            <a href="https://www.jw.org/en/" target="_blank" rel="noopener noreferrer">
-              jw.org — How to write letters
+            <a href="https://bradenriver.github.io/sampleletter" target="_blank" rel="noopener noreferrer">
+              Sample Letter
             </a>
           </li>
         </ul>
+      </section>
 
-        <div class="notice">
-          <strong>Important</strong><br />
-          Please keep in mind that no public database is perfectly current. It is normal for names to differ
-          between sources. If you encounter conflicting information, use good judgment and proceed in a
-          reasonable manner.
+      <section class="card">
+        <h2>Congregation Letter Writing Arrangements</h2>
+        <div class="note">
+          Monday and Friday on Zoom at <strong>9:30 a.m.</strong>
         </div>
       </section>
 
-      <!-- Research Tools Section -->
       <section class="card">
-        <h2>Address & Name Research Tools</h2>
+        <h2>Address and Name Research Tools</h2>
         <ul>
           <li>
             <a href="https://www.manateepao.gov/search/" target="_blank" rel="noopener noreferrer">
-              County Property Appraiser
+              Manatee County Property Appraiser
             </a>
           </li>
           <li>
@@ -133,15 +101,11 @@
             </a>
           </li>
           <li>
-            <a href="https://www.whitepages.com/" target="_blank" rel="noopener noreferrer">
-              Whitepages
+            <a href="https://www.whitepages.com/reverse-address" target="_blank" rel="noopener noreferrer">
+              White Pages
             </a>
           </li>
         </ul>
-
-        <footer>
-          Use discretion when selecting names if information differs between sources.
-        </footer>
       </section>
     </div>
   </body>

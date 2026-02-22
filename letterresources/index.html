@@ -9,7 +9,7 @@
       :root {
         --bg: #ffffff;
         --text: #111111;
-        --muted: #444444;
+        --muted: #555555;
         --border: #e6e6e6;
         --link: #0b57d0;
         --card: #fafafa;
@@ -28,41 +28,42 @@
         padding: 32px 18px 56px;
       }
       h1 {
-        margin: 0 0 22px;
+        margin: 0 0 24px;
         text-align: center;
         font-size: 30px;
-        letter-spacing: 0.2px;
       }
       .card {
         background: var(--card);
         border: 1px solid var(--border);
         border-radius: 12px;
-        padding: 18px;
-        margin-top: 16px;
+        padding: 20px;
+        margin-top: 18px;
       }
       h2 {
-        margin: 0 0 12px;
+        margin: 0 0 14px;
         font-size: 18px;
+        text-align: center;
       }
       ul {
-        margin: 0;
-        padding-left: 18px;
+        margin: 12px 0 0;
+        padding-left: 20px;
       }
-      li { margin: 10px 0; }
+      li { margin: 8px 0; }
       a {
         color: var(--link);
         text-decoration: none;
       }
       a:hover { text-decoration: underline; }
-      .note {
-        margin-top: 14px;
-        padding: 12px;
-        border: 1px solid var(--border);
-        background: #ffffff;
-        border-radius: 10px;
+      .notice-small {
+        font-size: 14px;
         color: var(--muted);
+        margin-top: 6px;
+        margin-bottom: 10px;
       }
-      .note strong { color: var(--text); }
+      .arrangement-text {
+        text-align: center;
+        font-size: 16px;
+      }
     </style>
   </head>
   <body>
@@ -82,13 +83,19 @@
 
       <section class="card">
         <h2>Congregation Letter Writing Arrangements</h2>
-        <div class="note">
+        <div class="arrangement-text">
           Monday and Friday on Zoom at <strong>9:30 a.m.</strong>
         </div>
       </section>
 
       <section class="card">
         <h2>Address and Name Research Tools</h2>
+
+        <div class="notice-small">
+          <strong>Important</strong><br />
+          Please keep in mind that no public database is perfectly current. It is normal for names to differ between sources. If you encounter conflicting information, use good judgment and proceed in a reasonable manner.
+        </div>
+
         <ul>
           <li>
             <a href="https://www.manateepao.gov/search/" target="_blank" rel="noopener noreferrer">
@@ -101,16 +108,16 @@
             </a>
           </li>
           <li>
+            <a href="https://www.truepeoplesearch.com/" target="_blank" rel="noopener noreferrer">
+              TruePeopleSearch
+            </a>
+          </li>
+          <li>
             <a href="https://www.whitepages.com/reverse-address" target="_blank" rel="noopener noreferrer">
               White Pages
             </a>
           </li>
         </ul>
-
-        <div class="note">
-          <strong>Important</strong><br />
-          Please keep in mind that no public database is perfectly current. It is normal for names to differ between sources. If you encounter conflicting information, use good judgment and proceed in a reasonable manner.
-        </div>
       </section>
     </div>
   </body>
